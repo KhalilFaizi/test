@@ -1,6 +1,0 @@
-noun : noun is the name of person , place and thing
-verb : vorb is shown action
-noun Ex : ahmad , khalil
-
-For checking multiline commit 
-sadiuasb 
