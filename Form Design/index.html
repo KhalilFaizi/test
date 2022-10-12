@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:radial-gradient(rgb(203, 157, 209) , rgb(61, 140, 189)  );
+        }
+        input , select{
+            padding-bottom: 5px;
+            border: none;
+            border-bottom: 1px solid gray;
+        }
+        .container{
+            background-color: white;
+            width: 1000px;
+            height: 550px;
+            margin: 0 auto;
+            margin-top: 70px;
+            border: 1px solid gray;
+        }
+        form{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .left form h1{
+            color: blue;
+        }
+        .left{
+            background-color: white;
+            height: 550px;
+            width: 499.5px;
+            float: left;
+            display: inline;
+        }
+        .left select{
+            border: none;
+            border-bottom: 1px solid gray;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            color: gray;
+        }
+        .left .S-width{
+            width: 100%;
+        }
+        .left .Business{
+            width: 58%;
+        }
+        .left .Emp{
+            width: 40%;
+        }
+        .left .fn{
+            width: 47.8%;
+        }
+        .left .ln{
+            width: 47.8%;
+        }
+        .right{
+            background-color: blue;
+            height: 550px;
+            width: 499.5px;
+            float: right;
+        }
+        .right input{
+            background-color: blue ;
+            color: white;
+        }
+        .right select{
+            background-color: blue ;
+            color: white;
+            border: none;
+            border-bottom: 1px solid gray;   
+        }
+        .right h1{
+            color: white;
+        }
+        .right input,select{
+            margin-top: 30px;
+        }
+        .right form input::placeholder {
+            color: white;
+        }
+        .right .input-1 ,.input-6 , .input-2{
+            width: 99%;   
+        }
+        .right .input-3 , .input-4{
+            width: 35%;
+        }
+        .right .select-1{
+            width: 63%;
+        }
+        .right .select-2 {
+            width: 100%;
+        }
+        .right .input-5{
+            width: 62%;
+        }
+        .right span , a{
+            color: white;
+        }
+        .right .submit{
+             border-radius: 30px;
+             color: black;
+             background-color: whitesmoke;
+             padding: 10px 20px 10px 20px;
+         }
+         .right .submit:hover{
+            background-color: lightskyblue;
+            cursor: pointer;
+         }
+         .right .p{
+             padding-left: 25px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+                <form action="" class="info">
+                    <h1>General Information</h1>
+                    <select class="S-width" name="Title" id="">
+                        <option value="Title"  >Title</option>
+                        <option value="CS">CS</option>
+                        <option value="Databas">Databas</option>
+                        <option value="Network">Network</option>
+                    </select>
+                    <br>
+                    <input class="fn" type="name" placeholder="First Name">
+                    <input class="ln" type="name" placeholder="Last Name">
+                    <br>
+                    <select class="S-width" name="Position" id="">
+                        <option value="Position" >Position</option>
+                        <option value="PHD">PHD</option>
+                        <option value="Master">Master</option>
+                        <option value="Bechlor">Bechlor</option>
+                    </select>
+                    <br>
+                    <input class="S-width" type="name" placeholder="Company">
+                    <br>
+                    <input class="Business" type="name" placeholder="Business Area">
+                    <select class="Emp" name="Employees" id="">
+                        <option value="Employees" >Employees</option>
+                        <option value="Ahmad">Ahmad</option>
+                        <option value="Sabir">Sabir</option>
+                        <option value="Khalil">Khalil</option>
+                    </select>
+                 </form>
+        </div>
+        <div class="right">
+            <form action="" class="contact">
+                    <h1>Contact Details</h1>
+                    <input class="input-1" type="text" placeholder="Street + Nr">
+                    <input class="input-2" type="text" placeholder="Additional Information">
+                    <input class="input-3" type="number" placeholder="Zip Code" />
+                    <select class="select-1" name="lace" id="">
+                        <option value="">Place</option>
+                        <option value="">Kandahar</option>
+                        <option value="">Kabul</option> 
+                    </select>
+                    <br>
+                    <select class="select-2"  name="country" id="">
+                        <option value="">Country</option>
+                        <option value="">Afghanistan</option>
+                        <option value="">India</option> 
+                    </select>
+                    <br>
+                    <input class="input-4" type="number" placeholder="Code +">
+                    <input class="input-5" type="number" placeholder="Phone Number">
+                    <br>
+                    <input class="input-6" type="email" placeholder="Your Email">
+                    <br>
+                    <span>   
+                        <input class="radio" type="radio">
+                        I do accept the <strong><a href="#">Terms and conditions</a></strong>
+                        <br>    
+                        <span class="p">
+                            of your site.
+                        </span>
+                    </span>
+                    <br>
+                    <input class="submit" type="submit"  value="Register Badge" />
+            </form>   
+        </div>
+    </div>       
+</body>
+</html>
